@@ -9,6 +9,8 @@
 </script>
 <script src="<?php echo BASEURL; ?>js/bootstrap.min.js"></script>
 <script src="<?php echo BASEURL; ?>js/main.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEURL; ?>js/jquery.mask.min.js"></script>
 </body>
 
 </html>
