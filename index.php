@@ -25,7 +25,7 @@
                     <div class="col-md-4 mb-3">
                         <label for="telefoneFixo">Telefone Fixo</label>
                         <input type="tel" class="form-control telefoneFixo" name="telefone_fixo" id="telefoneFixo"
-                            placeholder="(xx) xxxx-xxxx"> <script>$("#telefone").mask("(00) 0000-0000");</script>
+                            placeholder="(xx) xxxx-xxxx"> <script type="text/javascript">$("#telefone").mask("(00) 0000-0000");</script>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
@@ -35,7 +35,7 @@
                     <div class="col-md-4 mb-3">
                         <label for="telefoneCelular">Telefone Celular</label>
                         <input type="tel" class="form-control telefoneCelular" name="telefone_celular"
-                            id="telefoneCelular" placeholder="(xx) xxxxx-xxxx"> <script>$("#telefone").mask("(00) 00000-0000");</script>
+                            id="telefoneCelular" placeholder="(xx) xxxxx-xxxx"> <script type="text/javascript">$("#telefone").mask("(00) 00000-0000");</script>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
