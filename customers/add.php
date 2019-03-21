@@ -9,9 +9,9 @@
     </div>
     <div class="card-body">
         <div class="row">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            
             <div class="col-md-6 text-center" id="num" > 
-                
+                1
             </div>
             <div class="col-md-6">
             <form class="needs-validation formdetail" action="add.php" novalidate method="POST">
