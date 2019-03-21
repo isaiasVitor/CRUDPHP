@@ -10,7 +10,7 @@
         </div>
         <div class="card-body">
             <form class="needs-validation formdetail" novalidate method="POST"
-                action="gerencia-registro.php?acao=adicionar">
+                >
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="nome">Nome Completo</label>
