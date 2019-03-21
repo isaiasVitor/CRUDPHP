@@ -31,22 +31,21 @@
             <?php echo $customer['telefone_celular'];  ?> <br>
             <?php echo $customer['congregacao']; ?> <br>
         </div>
+        <div class="card card-body">
+            <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
+                <i class="fa fa-pencil"></i> Editar
+            </a>
+            <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal"
+                data-customer="<?php echo $customer['id']; ?>">
+                <i class="fa fa-trash"></i> Excluir
+            </a>
+        </div>
     </div>
-    <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
-        <i class="fa fa-pencil"></i> Editar
-    </a>
-    <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal"
-        data-customer="<?php echo $customer['id']; ?>">
-        <i class="fa fa-trash"></i> Excluir
-    </a>
 
-
-
-
-<?php endforeach; ?>
-<?php else : ?>
-Nenhum registro encontrado
-<?php endif; ?>
+    <?php endforeach; ?>
+    <?php else : ?>
+    Nenhum registro encontrado
+    <?php endif; ?>
 
 </div>
 <?php include(FOOTER_TEMPLATE); ?>
