@@ -22,5 +22,7 @@ $.getScript("js/jquery.mask.js", function(){
     }, false);
 })();
 
-
-jQuery("input.telefoneFixo").mask("(00) 0000-0000");
+$(document).ready(function(){
+    alert("document started");
+    $("input.telefoneFixo").mask("(00) 0000-0000");
+});
