@@ -21,28 +21,29 @@
 <?php clear_messages(); ?> <?php endif; ?>
 
 <div class="list-group" <?php if ($customers) : ?> <?php foreach ($customers as $customer) : ?>>
-    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="list-group-item list-group-item-action">
+    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample" class="list-group-item list-group-item-action">
         <?php echo $customer['id']; ?> <?php echo $customer['nome'];?>
     </a>
     <div class="collapse" id="collapseExample">
         <div class="card card-body">
-            <?php echo $customer['telefone_fixo']; "<BR>" ?>
-            <?php echo $customer['telefone_celular']; "<BR>" ?>
-            <?php echo $customer['congregacao']; "<BR>"?>
+            <?php echo $customer['telefone_fixo'];  ?> <br>
+            <?php echo $customer['telefone_celular'];  ?> <br>
+            <?php echo $customer['congregacao']; ?> <br>
         </div>
     </div>
+    <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
+        <i class="fa fa-pencil"></i> Editar
+    </a>
+    <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal"
+        data-customer="<?php echo $customer['id']; ?>">
+        <i class="fa fa-trash"></i> Excluir
+    </a>
 
 </div>
 
 
 
-<a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
-    <i class="fa fa-pencil"></i> Editar
-</a>
-<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal"
-    data-customer="<?php echo $customer['id']; ?>">
-    <i class="fa fa-trash"></i> Excluir
-</a>
 
 <?php endforeach; ?>
 <?php else : ?>
