@@ -45,4 +45,4 @@
         </div>
     </nav>
     </nav>
-    <main style="heigth:85%">
+    <main style="height:85%">
