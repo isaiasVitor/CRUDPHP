@@ -1,3 +1,9 @@
+$.getScript("jquery.mask.js", function(){
+    alert("Script loaded but not necessarily executed.");
+ });
+
+ 
+
 (function() {
     'use strict';
     window.addEventListener('load', function() {
@@ -15,3 +21,6 @@
         });
     }, false);
 })();
+
+
+jQuery("input.telefoneFixo").mask("(00) 0000-0000");
