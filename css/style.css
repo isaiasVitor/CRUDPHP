@@ -9,10 +9,10 @@ main{
 
 #num{
     color:greenyellow;
-    font-size:1rem;
+    font-size:2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 767px) {
     #num{
         padding-top:10%;
         color:greenyellow;
