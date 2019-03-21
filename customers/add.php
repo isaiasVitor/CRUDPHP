@@ -1,7 +1,7 @@
 <?php 	  
     require_once('functions.php'); 	  
     add();	
-?>
+    ?>
 <?php include(HEADER_TEMPLATE); ?>
 <div class="card">
     <div class="card-header">
@@ -9,6 +9,7 @@
     </div>
     <div class="card-body">
         <div class="row">
+            <div class="col-md-6 text-center" id="num" > 1 </div>
             <div class="col-md-6">
             <form class="needs-validation formdetail" action="add.php" novalidate method="POST">
                 <div class="form-row">
@@ -65,7 +66,6 @@
                 </div>
             </form>
             </div>
-            <div class="col-md-6 text-center" id="num" > 1 </div>
         </div>
     </div>
 </div>
