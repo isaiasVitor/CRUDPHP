@@ -1,6 +1,6 @@
 </main> <!-- /container -->
 
-<footer class="container">
+<footer class="footer navbar-fixed-bottom">
     <p>&copy;2019 - Isaias Developer</p>
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
