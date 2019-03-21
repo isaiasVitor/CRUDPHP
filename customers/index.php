@@ -39,6 +39,7 @@
                 <i class="fa fa-trash"></i> Excluir
             </a>
         </div>
+        <
     </div>
 
     <?php endforeach; ?>
