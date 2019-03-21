@@ -31,10 +31,10 @@
                         Discipulado
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="<?php echo BASEURL; ?>/customers/add.php">Cadastrar aluno</a>
+                        <a class="dropdown-item" href="<?php echo BASEURL; ?>customers/add.php">Cadastrar aluno</a>
                         <a class="dropdown-item" href="#">Registrar Presenças</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="<?php echo BASEURL; ?>/customers/index.php">Apurar Resultados</a>
+                        <a class="dropdown-item" href="<?php echo BASEURL; ?>customers/index.php">Apurar Resultados</a>
                         <a class="dropdown-item" href="#">Exportar Planilha</a>
 
                     </div>
