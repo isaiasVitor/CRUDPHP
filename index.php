@@ -25,7 +25,9 @@
                     <div class="col-md-4 mb-3">
                         <label for="telefoneFixo">Telefone Fixo</label>
                         <input type="tel" class="form-control telefoneFixo" name="telefone_fixo" id="telefoneFixo"
-                            placeholder="(xx) xxxx-xxxx"> <script>jQuery("#telefone").mask("(00) 0000-0000");</script>
+                            placeholder="(xx) xxxx-xxxx"> <script type="text/javascript" >
+                            import 'jquery-mask-plugin';
+                            $("#telefone").mask("(00) 0000-0000");</script>
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
