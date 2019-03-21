@@ -3,6 +3,15 @@ $.getScript("js/jquery.mask.js", function(){
         $("input.telefoneFixo").mask("(00) 0000-0000");
         $("input.telefoneCelular").mask("(00) 00000-0000");
     });
+    $(function() {
+        setTime();
+        function setTime() {
+           var date = new Date().getTime();
+           var string = "Timestamp: "+date;
+           setTimeout(setTime, 3000);
+           $('#num').html(string);
+        }
+      });
  });
 
 
