@@ -5,7 +5,7 @@
 <?php include(HEADER_TEMPLATE); ?>	
 <div class="card">
         <div class="card-header">
-            <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
+            <p class="lead">Edição do aluno do discipulado</p>
         </div>
         <div class="card-body">
             <form class="needs-validation formdetail" action="edit.php?id=<?php echo $customer['id'];?>" novalidate method="POST"
