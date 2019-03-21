@@ -1,8 +1,8 @@
-$.getScript("jquery.mask.js", function(){
+$.getScript("js/jquery.mask.js", function(){
     alert("Script loaded but not necessarily executed.");
  });
 
- 
+
 
 (function() {
     'use strict';
