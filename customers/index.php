@@ -21,11 +21,11 @@
 <?php clear_messages(); ?> <?php endif; ?>
 
 <div class="list-group" <?php if ($customers) : foreach ($customers as $customer) : ?> >
-    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-        aria-controls="collapseExample" class="list-group-item list-group-item-action">
+    <a data-toggle="collapse" href="#collapseExample<?php echo $customer['id']?>" role="button" aria-expanded="false"
+        aria-controls="collapseExample<?php echo $customer['id']?>" class="list-group-item list-group-item-action">
         <?php echo $customer['id']. " - " .$customer['nome'];?>
     </a>
-    <div class="collapse" id="collapseExample">
+    <div class="collapse" id="collapseExample<?php echo $customer['id']?>">
         <div class="card card-body">
             <?php echo $customer['telefone_fixo'];  ?> <br>
             <?php echo $customer['telefone_celular'];  ?> <br>
