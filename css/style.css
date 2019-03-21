@@ -8,5 +8,14 @@ main{
 }
 
 #num{
-    color:red;
+    color:greenyellow;
+    font-size:10px;
 }
+
+@media screen and (min-width: 800px) {
+    #num{
+        padding-top: 30%;
+        color:greenyellow;
+        font-size:40px;
+    }
+  }
