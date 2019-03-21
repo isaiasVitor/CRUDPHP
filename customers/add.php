@@ -1,20 +1,21 @@
 <?php 	  
     require_once('functions.php'); 	  
     add();	
-?>	
-<?php include(HEADER_TEMPLATE); ?>	
+?>
+<?php include(HEADER_TEMPLATE); ?>
 <div class="card">
-        <div class="card-header">
-            <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
-        </div>
-        <div class="card-body">
-            <form class="needs-validation formdetail" action="add.php" novalidate method="POST"
-                >
+    <div class="card-header">
+        <p class="lead">Cadastro de pessoas para as aulas do Discipulado</p>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+            <form class="needs-validation formdetail" action="add.php" novalidate method="POST">
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="nome">Nome Completo</label>
-                        <input type="text" class="form-control" name="aluno['nome']" id="nome" placeholder="Nome Completo"
-                            required>
+                        <input type="text" class="form-control" name="aluno['nome']" id="nome"
+                            placeholder="Nome Completo" required>
                         <div class="invalid-feedback">
                             Por favor digite um nome valido
                         </div>
@@ -23,8 +24,8 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="telefoneFixo">Telefone Fixo</label>
-                        <input type="tel" class="form-control telefoneFixo" name="aluno['telefone_fixo']" id="telefoneFixo"
-                            placeholder="(xx) xxxx-xxxx">
+                        <input type="tel" class="form-control telefoneFixo" name="aluno['telefone_fixo']"
+                            id="telefoneFixo" placeholder="(xx) xxxx-xxxx">
                         <div class="invalid-feedback">
                             Por favor digite um telefone valido.
                         </div>
@@ -43,7 +44,8 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="congregacao">Selecione a Congregação</label>
-                        <select class="custom-select my-1 mr-sm-2" name="aluno['congregacao']" id="congregacao" required>
+                        <select class="custom-select my-1 mr-sm-2" name="aluno['congregacao']" id="congregacao"
+                            required>
                             <option selected value="">Escolha...</option>
                             <option value="Sede">Sede</option>
                             <option value="Pq. São Paulo">Pq. São Paulo</option>
@@ -62,6 +64,9 @@
                     </div>
                 </div>
             </form>
+            </div>
+            <div class="col-md-6 text-center" > 1 </div>
         </div>
     </div>
- <?php include(FOOTER_TEMPLATE); ?>
+</div>
+<?php include(FOOTER_TEMPLATE); ?>
