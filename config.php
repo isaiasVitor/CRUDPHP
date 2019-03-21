@@ -8,4 +8,8 @@ define('ABSPATH', dirname(__FILE__) . '/');			/** caminho no server para o siste
 if ( !defined('BASEURL') )		
 define('BASEURL', '/CRUD');			/** caminho do arquivo de banco de dados **/	
 if ( !defined('DBAPI') )		
-define('DBAPI', ABSPATH . 'inc/database.php');
+    define('DBAPI', ABSPATH . 'inc/database.php');
+
+/** caminhos dos templates de header e footer **/
+define('HEADER_TEMPLATE', ABSPATH . 'inc/header.php');	
+define('FOOTER_TEMPLATE', ABSPATH . 'inc/footer.php');
