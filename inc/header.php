@@ -12,25 +12,36 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle
-                        navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
-                        class="icon-bar"></span> </button> <a href="<?php echo BASEURL; ?>index.php"
-                    class="navbar-brand">CRUD</a> </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                            aria-haspopup="true" aria-expanded="false"> Clientes <span class="caret"></span> </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo BASEURL; ?>customers">Gerenciar Clientes</a></li>
-                            <li><a href="<?php echo BASEURL; ?>customers/add.php">Novo Cliente</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!--/.navbar-collapse -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ADBA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Discipulado
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="form.php">Cadastrar aluno</a>
+                        <a class="dropdown-item" href="#">Registrar Presenças</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="table.php">Apurar Resultados</a>
+                        <a class="dropdown-item" href="#">Exportar Planilha</a>
+
+                    </div>
+                </li>
+
+            </ul>
+
         </div>
+    </nav>
     </nav>
     <main class="container">
