@@ -12,7 +12,6 @@
     <?php echo $_SESSION['message']; ?>
 </div>
 <?php clear_messages(); ?> <?php endif; ?>
-<hr>
 <div class="table-responsive">
     <table class="table">
         <thead>
