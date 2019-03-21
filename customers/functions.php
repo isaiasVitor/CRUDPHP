@@ -37,7 +37,7 @@ function edit() {
       } else {
   
         global $customer;
-        $customer = find('aluno', $id);
+        $customer = find('alunos', $id);
       } 
     } else {
       header('location: index.php');
