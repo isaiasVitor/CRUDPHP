@@ -17,6 +17,12 @@ function close_database($conn) {
     }	
 }
 
+/**	 *  Pesquisa Todos os Registros de uma Tabela	 */	
+function find_all( $table ) {	  
+    return find($table);	
+}
+
+
 /**	 *  Pesquisa um Registro pelo ID em uma Tabela	 */	
 function find( $table = null, $id = null ) {	  		
     $database = open_database();		

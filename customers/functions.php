@@ -5,5 +5,5 @@ $customers = null;	$customer = null;
 /**	 *  Listagem de Clientes	 */	
 function index() {		
     global $customers;		
-    $customers = find_all('customers');	
+    $customers = find_all('alunos');	
 }
