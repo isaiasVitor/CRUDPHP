@@ -13,6 +13,7 @@
 </div>
 <?php clear_messages(); ?> <?php endif; ?>
 <hr>
+<div class="table-responsive">
 <table class="table table-hover">
     <thead>
         <tr>
@@ -47,5 +48,7 @@
             <td colspan="6">Nenhum registro encontrado.</td>
         </tr> <?php endif; ?>
     </tbody>
+    
 </table>
+</div>
 <?php include(FOOTER_TEMPLATE); ?>
