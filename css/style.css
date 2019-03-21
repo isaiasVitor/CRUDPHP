@@ -14,8 +14,8 @@ main{
 
 @media screen and (min-width: 800px) {
     #num{
-        padding-top: 30%;
+        
         color:greenyellow;
-        font-size:40px;
+        font-size:45px;
     }
   }
