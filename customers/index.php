@@ -23,7 +23,7 @@
 <div class="list-group" <?php if ($customers) : ?> <?php foreach ($customers as $customer) : ?>>
     <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
         aria-controls="collapseExample" class="list-group-item list-group-item-action">
-        <?php echo $customer['id']; ?> <?php echo $customer['nome'];?>
+        <?php echo $customer['id']; ?> - <?php echo $customer['nome'];?>
     </a>
     <div class="collapse" id="collapseExample">
         <div class="card card-body">
@@ -35,8 +35,7 @@
             <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
                 <i class="fa fa-pencil"></i> Editar
             </a>
-            <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal"
-                data-customer="<?php echo $customer['id']; ?>">
+            <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal">
                 <i class="fa fa-trash"></i> Excluir
             </a>
         </div>
