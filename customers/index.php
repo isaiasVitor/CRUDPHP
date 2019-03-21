@@ -40,8 +40,6 @@
         <i class="fa fa-trash"></i> Excluir
     </a>
 
-</div>
-
 
 
 
@@ -49,8 +47,6 @@
 <?php else : ?>
 Nenhum registro encontrado
 <?php endif; ?>
-</tbody>
 
-</table>
 </div>
 <?php include(FOOTER_TEMPLATE); ?>
