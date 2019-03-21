@@ -20,10 +20,10 @@
 </div>
 <?php clear_messages(); ?> <?php endif; ?>
 
-<div class="list-group" <?php if ($customers) : ?> <?php foreach ($customers as $customer) : ?>>
+<div class="list-group" <?php if ($customers) : foreach ($customers as $customer) : ?> >
     <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
         aria-controls="collapseExample" class="list-group-item list-group-item-action">
-        <?php echo $customer['id']; ?> - <?php echo $customer['nome'];?>
+        <?php echo $customer['id']. " - " .$customer['nome'];?>
     </a>
     <div class="collapse" id="collapseExample">
         <div class="card card-body">
@@ -45,6 +45,5 @@
     <?php else : ?>
     Nenhum registro encontrado
     <?php endif; ?>
-
 </div>
 <?php include(FOOTER_TEMPLATE); ?>
