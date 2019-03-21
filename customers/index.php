@@ -20,6 +20,7 @@
                 <th width="30%">Nome</th>
                 <th>Telefone Fixo</th>
                 <th>Telefone Celular</th>
+                <th>Congregação</th>
                 <th>Opções</th>
             </tr>
         </thead>
@@ -29,6 +30,7 @@
                 <td><?php echo $customer['nome']; ?></td>
                 <td><?php echo $customer['telefone_fixo']; ?></td>
                 <td><?php echo $customer['telefone_celular']; ?></td>
+                <td><?php echo $customer['congregacao'];?></td>
                 <td class="actions text-right">
                     <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
                         <i class="fa fa-pencil"></i> Editar
