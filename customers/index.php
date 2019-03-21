@@ -21,7 +21,7 @@
 <?php clear_messages(); ?> <?php endif; ?>
 
 <div class="list-group" <?php if ($customers) : ?> <?php foreach ($customers as $customer) : ?>>
-    <a href="#" class="list-group-item list-group-item-action active">
+    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="list-group-item list-group-item-action">
         <?php echo $customer['id']; ?> <?php echo $customer['nome'];?>
     </a>
     <div class="collapse" id="collapseExample">
