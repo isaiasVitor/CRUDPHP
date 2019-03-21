@@ -12,7 +12,7 @@
             <div class="col-md-6">
             <form class="needs-validation formdetail" action="add.php" novalidate method="POST">
                 <div class="form-row">
-                    <div class="my-1 mr-sm-2">
+                    <div class="col-md-1">
                         <label for="nome">Nome Completo</label>
                         <input type="text" class="form-control" name="aluno['nome']" id="nome"
                             placeholder="Nome Completo" required>
