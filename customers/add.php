@@ -12,7 +12,7 @@
             <div class="col-md-6">
             <form class="needs-validation formdetail" action="add.php" novalidate method="POST">
                 <div class="form-row">
-                    <div >
+                    <div class="my-1 mr-sm-2">
                         <label for="nome">Nome Completo</label>
                         <input type="text" class="form-control" name="aluno['nome']" id="nome"
                             placeholder="Nome Completo" required>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div >
+                    <div class="my-1 mr-sm-2">
                         <label for="telefoneFixo">Telefone Fixo</label>
                         <input type="tel" class="form-control telefoneFixo" name="aluno['telefone_fixo']"
                             id="telefoneFixo" placeholder="(xx) xxxx-xxxx">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div >
+                    <div class="my-1 mr-sm-2">
                         <label for="telefoneCelular">Telefone Celular</label>
                         <input type="tel" class="form-control telefoneCelular" name="aluno['telefone_celular']"
                             id="telefoneCelular" placeholder="(xx) xxxxx-xxxx">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div >
+                    <div class="my-1 mr-sm-2">
                         <label for="congregacao">Selecione a Congregação</label>
                         <select class="custom-select my-1 mr-sm-2" name="aluno['congregacao']" id="congregacao"
                             required>
