@@ -25,7 +25,7 @@
         aria-controls="collapseExample<?php echo $customer['id']?>" class="list-group-item list-group-item-action">
         <?php echo $customer['id']. " - " .$customer['nome'];?>
     </a>
-    <div class="collapse" id="collapseExample<?php echo $customer['id']?>">
+    <div class="collapse" id="collapseExample<?php echo $customer['id']?>" >
         <div class="card card-body">
             <?php echo $customer['telefone_fixo'];  ?> <br>
             <?php echo $customer['telefone_celular'];  ?> <br>
@@ -35,13 +35,9 @@
             <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
                 <i class="fa fa-pencil"></i> Editar
             </a>
-            <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal">
-                <i class="fa fa-trash"></i> Excluir
-            </a>
         </div>
-        <
+        
     </div>
-
     <?php endforeach; ?>
     <?php else : ?>
     Nenhum registro encontrado
