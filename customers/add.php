@@ -9,7 +9,8 @@
     </div>
     <div class="card-body">
         <div class="row">
-            <div class="col-md-6 text-center" id="num" > Ultimo Regristro: 20 </div>
+            <div class="col-md-6 text-center" id="num" > 
+                <label>Ultimo Regristro: 20 </div></label>
             <div class="col-md-6">
             <form class="needs-validation formdetail" action="add.php" novalidate method="POST">
                 <div class="form-row">

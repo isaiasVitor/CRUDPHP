@@ -9,12 +9,12 @@ main{
 
 #num{
     color:greenyellow;
-    font-size:15px;
+    font-size:1rem;
 }
 
 @media screen and (min-width: 800px) {
     #num{
-        padding-top:5%;
+        padding-top:10%;
         color:greenyellow;
         font-size:45px;
     }
