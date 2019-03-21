@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="<?php echo BASEURL; ?>">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -34,7 +34,7 @@
                         <a class="dropdown-item" href="<?php echo BASEURL; ?>customers/add.php">Cadastrar aluno</a>
                         <a class="dropdown-item" href="#">Registrar Presenças</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="<?php echo BASEURL; ?>customers/index.php">Apurar Resultados</a>
+                        <a class="dropdown-item" href="<?php echo BASEURL; ?>customers">Apurar Resultados</a>
                         <a class="dropdown-item" href="#">Exportar Planilha</a>
 
                     </div>
