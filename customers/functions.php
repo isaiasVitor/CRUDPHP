@@ -23,8 +23,6 @@ function add() {
  */
 function edit() {
 
-    ;
-  
     if (isset($_GET['id'])) {
   
       $id = $_GET['id'];
