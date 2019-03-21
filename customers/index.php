@@ -30,9 +30,6 @@
                 <td><?php echo $customer['telefone_fixo']; ?></td>
                 <td><?php echo $customer['telefone_celular']; ?></td>
                 <td class="actions text-right">
-                    <a href="view.php?id= <?php echo $customer['id']; ?>" class="btn btn-sm btn-success">
-                        <i class="fa fa-eye"></i> Visualizar
-                    </a>
                     <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
                         <i class="fa fa-pencil"></i> Editar
                     </a>
