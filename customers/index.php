@@ -18,8 +18,8 @@
         <tr>
             <th>ID</th>
             <th width="30%">Nome</th>
-            <th>CPF/CNPJ</th>
-            <th>Telefone</th>
+            <th>Telefone Fixo</th>
+            <th>Telefone Celular</th>
             <th>Opções</th>
         </tr>
     </thead>
