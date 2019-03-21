@@ -32,7 +32,7 @@ function edit() {
         $customer = $_POST['aluno'];
 
   
-        update('aluno', $id, $customer);
+        update('alunos', $id, $customer);
         header('location: index.php');
       } else {
   
