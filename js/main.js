@@ -11,7 +11,7 @@ $.getScript("js/jquery.mask.js", function(){
  function atualizar()
  {
      // Fazendo requisição AJAX
-     $.post('customers/atualizar.php', function (frase) {
+     $.post('atualizar.php', function (frase) {
   
          // Exibindo frase
          $('#frase').html(frase.total);
