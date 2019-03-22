@@ -1,6 +1,6 @@
 <?php 	  
     require_once('functions.php'); 	  
-
+    relatorios ();
     ?>
 <?php include(HEADER_TEMPLATE); ?>
 
@@ -15,7 +15,7 @@
             <div id="collapseTotalPorCongregacao" class="panel-collapse <?php echo ("TotalPorCongregacao" == 0 ? 'collapse in' : 'collapse'); ?>" role="tabpanel" aria-labelledby="headingTotalPorCongregacao">
                 <div class="panel-body">
 
-                    <span >Sede </span> 
+                    <span ><?php $relatorio["total"] ?> </span> 
                     <input type="text" class="form-control" value="" readonly>
                     
                     <span >Melhado</span>
