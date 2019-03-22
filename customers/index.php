@@ -20,14 +20,52 @@
 </div>
 <?php clear_messages(); ?> <?php endif; ?>
 <div class="listagem">
-        <?php if ($customers) : foreach ($customers as $customer) : ?>
 
-        <?php echo $customer['id']. " - " .$customer['nome'];?>
-        <?php echo $customer['telefone_fixo'];  ?> <br>
-        <?php echo $customer['telefone_celular'];  ?> <br>
-        <?php echo $customer['congregacao']; ?> <br>
+<?php if ($customers) : foreach ($customers as $customer) : ?>
 
-    <?php endforeach; ?>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default" role="tab" id="heading<?php echo $x; ?>">
+        <div class="panel-heading" >
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $x; ?>">
+
+                <?php echo strtoupper($customer['id']); ?>
+
+            </a>
+          </h4>
+        </div>
+        <div id="collapse<?php echo $customer['id']; ?>" class="panel-collapse <?php echo ($customer['id'] == 0 ? 'collapse in' : 'collapse'); ?>" role="tabpanel" aria-labelledby="heading<?php echo $customer['id']; ?>">
+          <div class="panel-body">
+
+                <div class="form-group">
+                  <label class="control-label" for="inputWarning"> Name</label>
+                  <input type="text" class="form-control" value="<?php echo $customer['nome']; ?>" readonly>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">telefone</label>
+                  <input type="text" class="form-control" value="<?php echo $customer['telefone']; ?>" readonly>
+                </div>
+
+              
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<?php endforeach;?>
+
+
+
+    
+        <?php// echo $customer['id']. " - " .$customer['nome'];?>
+        <?php// echo $customer['telefone_fixo'];  ?> <br>
+        <?php// echo $customer['telefone_celular'];  ?> <br>
+        <?php// echo $customer['congregacao']; ?> <br>
+
+    
     <?php else : ?>
     Nenhum registro encontrado
     <?php endif; ?>
