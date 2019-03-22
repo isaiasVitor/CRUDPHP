@@ -29,7 +29,7 @@
           <h4 class="panel-title">
             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $x; ?>">
 
-                <?php echo strtoupper($customer['id']); ?>
+                <?php echo strtoupper($customer['id']." - ".$customer['nome']); ?>
 
             </a>
           </h4>
@@ -38,15 +38,19 @@
           <div class="panel-body">
 
                 <div class="form-group">
-                  <label class="control-label" for="inputWarning"> Name</label>
-                  <input type="text" class="form-control" value="<?php echo $customer['nome']; ?>" readonly>
+                  <label class="control-label" for="inputWarning"> Telefone Fixo</label>
+                  <input type="text" class="form-control" value="<?php echo $customer['telefone_fixo']; ?>" readonly>
                 </div>
 
                 <div class="form-group">
-                  <label class="control-label">telefone</label>
-                  <input type="text" class="form-control" value="<?php echo $customer['telefone']; ?>" readonly>
+                  <label class="control-label">Telefone Celular</label>
+                  <input type="text" class="form-control" value="<?php echo $customer['telefone_celular']; ?>" readonly>
                 </div>
 
+                <div class="form-group">
+                  <label class="control-label">Congregação</label>
+                  <input type="text" class="form-control" value="<?php echo $customer['congregacao']; ?>" readonly>
+                </div>
               
                 </div>
           </div>
