@@ -5,19 +5,24 @@
 <?php include(HEADER_TEMPLATE); ?>
 
 <div class="card">
-    
-        <div class="card-header">
-            <p class="lead">Relatorios do Discipulado</p>
-        </div>
-        <div class="container-fluid">
-        <div class="card-body">
-            <div class=row>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default" role="tab" id="headingTotalPorCongregacao">
+            <div class="panel-heading" >
+                <a style="text-align: left !important" class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTotalPorCongregacao" aria-expanded="false" aria-controls="collapseTotalPorCongregacao">
+                 Total por Congregação
+                </a>            
+            </div>
+            <div id="collapseTotalPorCongregacao" class="panel-collapse <?php echo ("TotalPorCongregacao" == 0 ? 'collapse in' : 'collapse'); ?>" role="tabpanel" aria-labelledby="headingTotalPorCongregacao">
+                <div class="panel-body">
 
-                <div class="col-md-6" style="background:yellow">
-                    hello   
-                </div>
-                <div class="col-md-6" style="background:blue">
-                    world
+                    <span >Sede </span> 
+                    <input type="text" class="form-control" value="" readonly>
+                    
+                    <span >Melhado</span>
+                    <input type="text" class="form-control" value="" readonly>              
+                        
+                    <span>São Paulo</span>
+                    <input type="text" class="form-control" value="" readonly>
                 </div>
             </div>
         </div>
