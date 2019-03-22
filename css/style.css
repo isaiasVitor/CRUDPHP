@@ -9,7 +9,7 @@ main{
 
 #num{
     color:greenyellow;
-    font-size:18px;
+    font-size:15px;
 }
 
 @media screen and (min-width: 767px) {
