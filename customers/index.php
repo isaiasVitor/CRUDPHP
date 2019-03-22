@@ -27,10 +27,6 @@
         <?php echo $customer['telefone_celular'];  ?> <br>
         <?php echo $customer['congregacao']; ?> <br>
 
-
-        <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
-            <i class="fa fa-pencil"></i> Editar
-        </a>
     <?php endforeach; ?>
     <?php else : ?>
     Nenhum registro encontrado
