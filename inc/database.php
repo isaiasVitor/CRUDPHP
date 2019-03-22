@@ -141,12 +141,11 @@ function relatorioTotalPorCongregacao(){
     $found = $result->row; 
    
    }
-   echo json_encode($frase);
   }catch(Exception $e){
     
     $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
     $_SESSION['type'] = 'danger';
   }
   close_database($database);
-  return $found;
+  return json_encode($found);
 }
