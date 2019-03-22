@@ -38,11 +38,11 @@
           <div class="panel-body">
 
            
-                <span class="input-group-text">Telefone Fixo </span> 
+                <span >Telefone Fixo </span> 
                 
                 <input type="text" class="form-control" value="<?php echo $customer['telefone_fixo']; ?>" readonly>
-                <span class="input-group-text"> Telefone Celular</span>
                 
+                <span > Telefone Celular</span>
                 <input type="text" class="form-control" value="<?php echo $customer['telefone_celular']; ?>" readonly>              
                                      
 
