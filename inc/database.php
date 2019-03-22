@@ -136,10 +136,8 @@ function relatorioTotalPorCongregacao(){
 
   try{
    $result = $database->query($sql);
-   $row = mysqli_fetch_assoc($result);
-   if ($result->num_rows > 0) {		      
-    $found = $result->row; 
-   
+    if ($result->num_rows > 0) {		      
+        $found = $result->fetch_all(MYSQLI_ASSOC);
    }
   }catch(Exception $e){
     
@@ -147,5 +145,5 @@ function relatorioTotalPorCongregacao(){
     $_SESSION['type'] = 'danger';
   }
   close_database($database);
-  return json_encode($found);
+  return $found;
 }
