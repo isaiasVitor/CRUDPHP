@@ -1,7 +1,6 @@
 <?php 	  
     require_once('functions.php'); 	  
-    add();
-    getLastElement();	
+    add();	
     ?>
 <?php include(HEADER_TEMPLATE); ?>
 <div class="card">
@@ -12,7 +11,7 @@
         <div class="row">
             
             <div class="col-md-6 text-center" id="num" > 
-                <?echo $ultimaApostila ?>
+                1
             </div>
             <div class="col-md-6">
             <form class="needs-validation formdetail" action="add.php" novalidate method="POST">
