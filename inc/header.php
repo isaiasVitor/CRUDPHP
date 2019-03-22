@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CRUD com Bootstrap</title>
+    <title>ADBA- Discipulado</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php echo BASEURL; ?>css/bootstrap.min.css">
@@ -14,7 +14,7 @@
 
 <body style="height:100%" >
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">ADBA</a>
+        <a class="navbar-brand" href="<?php echo BASEURL; ?>">ADBA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,9 +32,9 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="<?php echo BASEURL; ?>customers/add.php">Cadastrar aluno</a>
-                        <a class="dropdown-item" href="#">Registrar Presenças</a>
+                        <a class="dropdown-item" href="<?php echo BASEURL; ?>customers">Listagem de alunos</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="<?php echo BASEURL; ?>customers">Apurar Resultados</a>
+                        <a class="dropdown-item" href="#">Registrar Presenças</a>
                         <a class="dropdown-item" href="#">Exportar Planilha</a>
 
                     </div>
