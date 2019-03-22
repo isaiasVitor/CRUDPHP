@@ -7,9 +7,26 @@ $.getScript("js/jquery.mask.js", function(){
     });
  });
 
-(function(){
-    alert("ok");
-})();
+
+ function atualizar()
+ {
+     // Fazendo requisição AJAX
+     $.post('customers/atualizar.php', function (frase) {
+  
+         // Exibindo frase
+         $('#frase').html(frase.total);
+  
+     }, 'JSON');
+ }
+  
+ // Definindo intervalo que a função será chamada
+ setInterval("atualizar()", 10000);
+  
+ // Quando carregar a página
+ $(function() {
+     // Faz a primeira atualização
+     atualizar();
+ });
 
 (function() {
     'use strict';
