@@ -2,7 +2,7 @@
 <?php 	  
     require_once('functions.php'); 	  
     add();
-   	
+    header("Content-Type: text/html; charset=ISO-8859-1",true);
     ?>
 <?php include(HEADER_TEMPLATE); ?>
 <div class="card">
