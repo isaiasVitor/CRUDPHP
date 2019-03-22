@@ -46,4 +46,4 @@
         </div>
     </nav>
     </nav>
-    <main style="height:85%">
+    <main>
