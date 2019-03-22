@@ -29,7 +29,7 @@
           <h4 class="panel-title">
             <a class="btn btn-outline-primary btn-block btn-sm" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $customer['id']; ?>">
 
-                <strong><?php echo $customer['id']; ?></strong><?php echo strtoupper(" :  ".$customer['nome'])); ?>
+                <strong><?php echo $customer['id']; ?></strong><?php echo strtoupper(" :  ".$customer['nome']); ?>
 
             </a>
           </h4>
