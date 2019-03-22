@@ -8,7 +8,7 @@
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default" role="tab" id="headingTotalPorCongregacao">
             <div class="panel-heading" >
-                <a style="text-align: left !important" class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTotalPorCongregacao" aria-expanded="false" aria-controls="collapseTotalPorCongregacao">
+                <a class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTotalPorCongregacao" aria-expanded="false" aria-controls="collapseTotalPorCongregacao">
                  Total por Congregação
                 </a>            
             </div>
