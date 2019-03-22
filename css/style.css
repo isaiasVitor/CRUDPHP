@@ -1,7 +1,23 @@
+html, body {height:100%;}
+
+.card {
+    min-height:100%;
+    position:relative;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+
 #num{
     color:rgb(145, 214, 42);
     font-size:25px;
 }
+
+
 
 @media screen and (min-width: 767px) {
     #num{
