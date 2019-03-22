@@ -14,10 +14,10 @@
             <div class=row>
 
                 <div class="col-md-6" style="background:yellow">
-
+                    hello   
                 </div>
                 <div class="col-md-6" style="background:blue">
-
+                    world
                 </div>
             </div>
         </div>
