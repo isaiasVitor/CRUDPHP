@@ -21,28 +21,22 @@
 <?php clear_messages(); ?> <?php endif; ?>
 <div class="listagem">
     <div class="list-group" <?php if ($customers) : foreach ($customers as $customer) : ?>>
-        <a data-toggle="collapse" href="#collapseExample<?php echo $customer['id']?>" role="button"
-            aria-expanded="false" aria-controls="collapseExample<?php echo $customer['id']?>"
-            class="list-group-item list-group-item-action">
-            <?php echo $customer['id']. " - " .$customer['nome'];?>
-        </a>
-        <div class="collapse" id="collapseExample<?php echo $customer['id']?>">
-            <div class="card card-body">
-                <?php echo $customer['telefone_fixo'];  ?> <br>
-                <?php echo $customer['telefone_celular'];  ?> <br>
-                <?php echo $customer['congregacao']; ?> <br>
-            </div>
-            <div class="card card-body">
-                <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
-                    <i class="fa fa-pencil"></i> Editar
-                </a>
-            </div>
 
-        </div>
-        <?php endforeach; ?>
-        <?php else : ?>
-        Nenhum registro encontrado
-        <?php endif; ?>
+        <?php echo $customer['id']. " - " .$customer['nome'];?>
+        <?php echo $customer['telefone_fixo'];  ?> <br>
+        <?php echo $customer['telefone_celular'];  ?> <br>
+        <?php echo $customer['congregacao']; ?> <br>
+
+
+        <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
+            <i class="fa fa-pencil"></i> Editar
+        </a>
+
     </div>
+    <?php endforeach; ?>
+    <?php else : ?>
+    Nenhum registro encontrado
+    <?php endif; ?>
 </div>
+
 <?php include(FOOTER_TEMPLATE); ?>
