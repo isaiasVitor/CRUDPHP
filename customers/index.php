@@ -28,9 +28,9 @@
         <div class="panel-heading" >
 
             
-            <a class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $customer['id']; ?>">
+            <a style="text-align: left !important" class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $customer['id']; ?>">
 
-            <?php echo $customer['id']. "  :  ".$customer['nome']; ?>
+            <?php echo $customer['id']. " : ".$customer['nome']; ?>
 
             </a>
           
