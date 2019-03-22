@@ -1,5 +1,5 @@
 $.getScript("js/jquery.mask.js", function(){
-    alert("ok");
+    
     $(document).ready(function(){
 
         $("input.telefoneFixo").mask("(00) 0000-0000");
@@ -7,7 +7,9 @@ $.getScript("js/jquery.mask.js", function(){
     });
  });
 
-
+(function(){
+    alert("ok");
+})();
 
 (function() {
     'use strict';
