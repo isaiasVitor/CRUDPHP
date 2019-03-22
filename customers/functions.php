@@ -46,6 +46,6 @@ function edit() {
   }
 
   function relatorios (){
-    $relatoris = relatorioTotalPorCongregacao();
+    $relatorios = relatorioTotalPorCongregacao();
   }
   
