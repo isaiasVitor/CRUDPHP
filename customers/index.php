@@ -27,7 +27,7 @@
       <div class="panel panel-default" role="tab" id="heading<?php echo $customer['id']; ?>">
         <div class="panel-heading" >
           <h4 class="panel-title">
-            <a class="btn btn-outline-primary btn-block text-justify" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $customer['id']; ?>">
+            <a class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $customer['id']; ?>">
 
                 <?php echo strtoupper($customer['id'].":  ".$customer['nome']); ?>
 
