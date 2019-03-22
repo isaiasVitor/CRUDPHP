@@ -1,7 +1,7 @@
 <?php 	  
     require_once('functions.php'); 	  
     relatorios();
-    echo $relatorios["total"];
+    var_dump($relatorios["total"]);
     ?>
 <?php include(HEADER_TEMPLATE); ?>
 
