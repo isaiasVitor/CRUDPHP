@@ -1,7 +1,7 @@
 <?php 	  
     require_once('functions.php'); 	  
     add();
-    totalElements();	
+   	
     ?>
 <?php include(HEADER_TEMPLATE); ?>
 <div class="card">
@@ -12,7 +12,7 @@
         <div class="row">
             
             <div class="col-md-6 text-center" id="num" > 
-                <?php echo $totalElements ?>
+                <?php echo $frase ?>
             </div>
             <div class="col-md-6">
             <form class="needs-validation formdetail" action="add.php" novalidate method="POST">
