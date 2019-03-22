@@ -12,6 +12,28 @@ $.getScript("js/jquery.mask.js", function(){
            $('#num').html(string);
         }
       });
+
+        // Função responsável por atualizar as frases
+        function atualizar()
+        {
+            // Fazendo requisição AJAX
+            $.post('ajax/atualizar.php', function (frase) {
+
+                // Exibindo frase
+                $('#num').html('<i>' + frase.texto + '</i><br />' + frase.autor);
+
+            }, 'JSON');
+        }
+
+        // Definindo intervalo que a função será chamada
+        setInterval("atualizar()", 10000);
+
+        // Quando carregar a página
+        $(function() {
+            // Faz a primeira atualização
+            atualizar();
+        });      
+
  });
 
 
@@ -33,5 +55,4 @@ $.getScript("js/jquery.mask.js", function(){
         });
     }, false);
 })();
-
 

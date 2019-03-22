@@ -127,3 +127,22 @@ function update($table = null, $id = 0, $data = null) {
 
   close_database($database);
 }
+
+ function getLastElement($table = null){
+  $database = open_database();
+
+  $sql = "SELECT COUNT(ID) FROM".$table;
+
+  try{
+    $result = $database->query($sql);
+    return $result;
+    
+
+  }catch (Exception $e) { 
+
+    $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
+    $_SESSION['type'] = 'danger';
+  } 
+
+  close_database($database);
+ }

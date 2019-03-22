@@ -1,7 +1,7 @@
 <?php		
 require_once('../config.php');	
 require_once(DBAPI);		
-$customers = null;	$customer = null;		
+$customers = null;	$customer = null;	$ultimaApostila = null;	
 /**	 *  Listagem de Clientes	 */	
 function index() {		
     global $customers;		
@@ -42,4 +42,8 @@ function edit() {
     } else {
       header('location: index.php');
     }
+  }
+
+  function getLastElement(){
+    $ultimaApostila = getLastElement('alunos');
   }
