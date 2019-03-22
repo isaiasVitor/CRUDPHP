@@ -6,12 +6,12 @@
 
 <div class=row>
 
-<div class="col-md-6" style="background:yellow">
-
-</div>
-<div class="col-md-6" style="backgroud:blue">
-
-</div>
+    <div class="col-md-6" style="background:yellow">
+        x
+    </div>
+    <div class="col-md-6" style="backgroud:blue">
+x
+    </div>
 </div>
 
 
