@@ -26,13 +26,13 @@
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default" role="tab" id="heading<?php echo $customer['id']; ?>">
         <div class="panel-heading" >
-          <h4 class="panel-title">
-            <a class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $customer['id']; ?>">
+          <h5 class="panel-title">
+            <a  role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $customer['id']; ?>">
 
                 <?php echo strtoupper($customer['id'].":  ".$customer['nome']); ?>
 
             </a>
-          </h4>
+          </h5>
         </div>
         <div id="collapse<?php echo $customer['id']; ?>" class="panel-collapse <?php echo ($customer['id'] == 0 ? 'collapse in' : 'collapse'); ?>" role="tabpanel" aria-labelledby="heading<?php echo $customer['id']; ?>">
           <div class="panel-body">
