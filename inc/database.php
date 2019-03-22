@@ -128,14 +128,15 @@ function update($table = null, $id = 0, $data = null) {
   close_database($database);
 }
 
- function getLastElement($table = null){
+ function getLastElement(){
   $database = open_database();
 
-  $sql = "SELECT COUNT(ID) FROM".$table;
+  $sql = "SELECT COUNT(ID) as total FROM alunos ";
 
   try{
     $result = $database->query($sql);
-    return $result;
+    $data = mysql_fetch_assoc($result);
+    return $data["total"];
     
 
   }catch (Exception $e) { 
