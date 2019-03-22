@@ -11,7 +11,9 @@ require_once(DBAPI);
     try{
      $result = $database->query($sql);
      $row = mysqli_fetch_assoc($result);
-     $frase = $row["total"];
+     $frase = $row;
+
+     echo json_encode($frase);
     }catch(Exception $e){
       
       $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';

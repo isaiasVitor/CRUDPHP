@@ -2,29 +2,28 @@ $.getScript("js/jquery.mask.js", function(){
     $(document).ready(function(){
         $("input.telefoneFixo").mask("(00) 0000-0000");
         $("input.telefoneCelular").mask("(00) 00000-0000");
-        console.log("teste");
+     
     });
          // Função responsável por atualizar as frases
-        function atualizar()
-        {
-            alert("teste");
+         function atualizar()
+         {
              // Fazendo requisição AJAX
-            $.post('customers/atualizar.php', function (frase) {
-
-                // Exibindo frase
-                $('#num').html('<i>' + frase.texto + '</i><br />' + frase.autor);
-
-            }, 'JSON');
-        }
-
-        // Definindo intervalo que a função será chamada
-        setInterval("atualizar()", 3000);
-
-        // Quando carregar a página
-        $(function() {
-            // Faz a primeira atualização
-            atualizar();
-        });      
+             $.post('ajax/atualizar.php', function (frase) {
+          
+                 // Exibindo frase
+                 $('#frase').html('<i>' + frase.texto + '</i><br />' + frase.autor);
+          
+             }, 'JSON');
+         }
+          
+         // Definindo intervalo que a função será chamada
+         setInterval("atualizar()", 10000);
+          
+         // Quando carregar a página
+         $(function() {
+             // Faz a primeira atualização
+             atualizar();
+         });
 
  });
 
