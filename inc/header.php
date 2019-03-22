@@ -35,7 +35,7 @@
                         <a class="dropdown-item" href="<?php echo BASEURL; ?>customers">Listagem de alunos</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Registrar Presenças</a>
-                        <a class="dropdown-item" href="#">Relatorio Geral</a>
+                        <a class="dropdown-item" href="<?php echo BASEURL; ?>customers/relatorio.php">Relatorio Geral</a>
 
                     </div>
                 </li>
