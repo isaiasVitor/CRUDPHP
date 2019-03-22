@@ -3,8 +3,9 @@
 
     ?>
 <?php include(HEADER_TEMPLATE); ?>
-<div class="container-fluid">
-    <div class="card">
+
+<div class="card">
+    <div class="container-fluid">
         <div class="card-header">
             <p class="lead">Relatorios do Discipulado</p>
         </div>
