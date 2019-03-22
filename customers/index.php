@@ -21,57 +21,50 @@
 <?php clear_messages(); ?> <?php endif; ?>
 <div class="listagem">
 
-    <?php if ($customers) : foreach ($customers as $customer) : ?>
+<?php if ($customers) : foreach ($customers as $customer) : ?>
 
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default" role="tab" id="heading<?php echo $customer['id']; ?>">
-            <div class="panel-heading">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1"><?php echo $customer['id']; ?></span>
-                    </div>
-                    <a class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse"
-                        data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false"
-                        aria-controls="collapse<?php echo $customer['id']; ?>">
+      <div class="panel panel-default" role="tab" id="heading<?php echo $customer['id']; ?>">
+        <div class="panel-heading" >
 
-                        <?php echo ":  ".$customer['nome']; ?>
+            
+            <a class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $customer['id']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $customer['id']; ?>">
 
-                    </a>
-                </div>
-            </div>
-            <div id="collapse<?php echo $customer['id']; ?>"
-                class="panel-collapse <?php echo ($customer['id'] == 0 ? 'collapse in' : 'collapse'); ?>"
-                role="tabpanel" aria-labelledby="heading<?php echo $customer['id']; ?>">
-                <div class="panel-body">
+            <?php echo $customer['id']. "  :  ".$customer['nome']; ?>
 
-                    <span>Telefone Fixo </span>
-                    <input type="text" class="form-control" value="<?php echo $customer['telefone_fixo']; ?>" readonly>
-
-                    <span> Telefone Celular</span>
-                    <input type="text" class="form-control" value="<?php echo $customer['telefone_celular']; ?>"
-                        readonly>
-
-                    <span>Congregação</span>
-                    <input type="text" class="form-control" value="<?php echo $customer['congregacao']; ?>" readonly>
-
-
-                </div>
-            </div>
+            </a>
+          
         </div>
+        <div id="collapse<?php echo $customer['id']; ?>" class="panel-collapse <?php echo ($customer['id'] == 0 ? 'collapse in' : 'collapse'); ?>" role="tabpanel" aria-labelledby="heading<?php echo $customer['id']; ?>">
+          <div class="panel-body">
+
+            <span >Telefone Fixo </span> 
+            <input type="text" class="form-control" value="<?php echo $customer['telefone_fixo']; ?>" readonly>
+            
+            <span > Telefone Celular</span>
+            <input type="text" class="form-control" value="<?php echo $customer['telefone_celular']; ?>" readonly>              
+                
+            <span>Congregação</span>
+            <input type="text" class="form-control" value="<?php echo $customer['congregacao']; ?>" readonly>
+    
+
+          </div>
+        </div>
+      </div>
     </div>
 
 
-    <?php endforeach;?>
+<?php endforeach;?>
 
 
 
+    
+        <?php// echo $customer['id']. " - " .$customer['nome'];?>
+        <?php// echo $customer['telefone_fixo'];  ?> <br>
+        <?php// echo $customer['telefone_celular'];  ?> <br>
+        <?php// echo $customer['congregacao']; ?> <br>
 
-    <?php// echo $customer['id']. " - " .$customer['nome'];?>
-    <?php// echo $customer['telefone_fixo'];  ?> <br>
-    <?php// echo $customer['telefone_celular'];  ?> <br>
-    <?php// echo $customer['congregacao']; ?> <br>
-
-
+    
     <?php else : ?>
     Nenhum registro encontrado
     <?php endif; ?>
