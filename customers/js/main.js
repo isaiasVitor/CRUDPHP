@@ -11,7 +11,7 @@ $.getScript("js/jquery.mask.js", function(){
              $.post('ajax/atualizar.php', function (frase) {
           
                  // Exibindo frase
-                 $('#frase').html('<i>' + frase.texto + '</i><br />' + frase.autor);
+                 $('#frase').html(frase.total );
           
              }, 'JSON');
          }
