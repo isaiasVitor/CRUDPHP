@@ -20,7 +20,7 @@
 </div>
 <?php clear_messages(); ?> <?php endif; ?>
 <div class="listagem">
-    <div class="list-group" <?php if ($customers) : foreach ($customers as $customer) : ?>>
+        <?php if ($customers) : foreach ($customers as $customer) : ?>
 
         <?php echo $customer['id']. " - " .$customer['nome'];?>
         <?php echo $customer['telefone_fixo'];  ?> <br>
@@ -31,8 +31,6 @@
         <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning">
             <i class="fa fa-pencil"></i> Editar
         </a>
-
-    </div>
     <?php endforeach; ?>
     <?php else : ?>
     Nenhum registro encontrado
