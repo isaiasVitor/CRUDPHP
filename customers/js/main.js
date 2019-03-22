@@ -7,8 +7,8 @@ $.getScript("js/jquery.mask.js", function(){
          // Função responsável por atualizar as frases
         function atualizar()
         {
-            console.log("teste");
-            // Fazendo requisição AJAX
+            alert("teste");
+             // Fazendo requisição AJAX
             $.post('customers/atualizar.php', function (frase) {
 
                 // Exibindo frase
