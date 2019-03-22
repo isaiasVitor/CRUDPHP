@@ -44,7 +44,4 @@ function edit() {
     }
   }
 
-  function totalElement(){
-    $totalElements = totalElements();
-  }
-
+  

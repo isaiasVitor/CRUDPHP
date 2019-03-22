@@ -26,7 +26,7 @@ $.getScript("js/jquery.mask.js", function(){
         }
 
         // Definindo intervalo que a função será chamada
-        setInterval("atualizar()", 10000);
+        setInterval("atualizar()", 3000);
 
         // Quando carregar a página
         $(function() {
