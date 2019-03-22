@@ -37,15 +37,14 @@
         <div id="collapse<?php echo $customer['id']; ?>" class="panel-collapse <?php echo ($customer['id'] == 0 ? 'collapse in' : 'collapse'); ?>" role="tabpanel" aria-labelledby="heading<?php echo $customer['id']; ?>">
           <div class="panel-body">
 
-                <div class="form-group">
-                  <label class="control-label" for="inputWarning"> Telefone Fixo</label>
-                  <input type="text" class="form-control" value="<?php echo $customer['telefone_fixo']; ?>" readonly>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Telefone Fixo e Telefone Celular</span>
                 </div>
-
-                <div class="form-group">
-                  <label class="control-label">Telefone Celular</label>
-                  <input type="text" class="form-control" value="<?php echo $customer['telefone_celular']; ?>" readonly>
-                </div>
+                <input type="text" class="form-control" value="<?php echo $customer['telefone_fixo']; ?>" readonly>
+                <input type="text" class="form-control" value="<?php echo $customer['telefone_celular']; ?>" readonly>
+              
+            </div>                          
 
                 <div class="form-group">
                   <label class="control-label">Congregação</label>
