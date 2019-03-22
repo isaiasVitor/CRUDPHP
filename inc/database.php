@@ -128,4 +128,20 @@ function update($table = null, $id = 0, $data = null) {
   close_database($database);
 }
 
+function totalElements(){
+  $database = open_database();
+
+  $sql = "select count(id) as total from alunos";
+
+  try{
+   $result = $database->query($sql);
+   $row = mysqli_fetch_assoc($result);
+   return $row["total"];
+  }catch(Exception $e){
+    
+    $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
+    $_SESSION['type'] = 'danger';
+  }
+  close_database($database);
+}
  
