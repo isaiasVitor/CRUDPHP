@@ -5,6 +5,11 @@ html, body {height:100%;}
     position:relative;
 }
 
+.listagem{
+    min-height:85%;
+    position:relative;
+}
+
 .footer {
     position:absolute;
     bottom:0;
