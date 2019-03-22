@@ -1,8 +1,9 @@
 $.getScript("js/jquery.mask.js", function(){
+    alert("ok");
     $(document).ready(function(){
+
         $("input.telefoneFixo").mask("(00) 0000-0000");
         $("input.telefoneCelular").mask("(00) 00000-0000");
-        console.log("ok");
     });
  });
 
