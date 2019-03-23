@@ -149,11 +149,11 @@ function relatorioTotalPorCongregacao(){
   return $found;
 }
 
-function congregacoes(){
+function congregacoes_all(){
   $database = open_database();
   $congregacoes = null;		
 
-  $sql = "select * from congregacoes;";
+  $sql = "SELECT * FROM congregacoes;";
 
   try{
     $result = $database->query($sql);		    		    

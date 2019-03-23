@@ -45,7 +45,7 @@ function edit() {
     }
   }
 
-  function congregacoes(){
+  function congregacoes_all(){
     global $congregacoes;
     $congregacoes = congregacoes();
   }
