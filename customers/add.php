@@ -52,10 +52,7 @@
                             <select class="custom-select my-1 mr-sm-2" name="aluno['congregacoes_id']" id="congregacao"
                                 required>
                                 <option selected value="">Escolha...</option>
-                                <?php  foreach ($congregacoes as $congregacao): ?>
-                                <option value="<?php echo $congregacao['id']?>"><?php echo $congregacao['nome']?>
-                                </option>
-                                <?php endforeach; ?>
+                             
                             </select>
                             <div class="invalid-feedback">Selecione a Congregação</div>
                         </div>
