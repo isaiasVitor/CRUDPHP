@@ -14,7 +14,7 @@ $.getScript("js/jquery.mask.js", function(){
      $.post('atualizar.php', function (frase) {
   
          // Exibindo frase
-         $('#frase').html("Ultimo registro<br>" +"<p id='teste'>"+ frase.id + frase.nome + "</p>" );
+         $('#frase').html("Ultimo registro<br>" +"<p id='teste'>"+ frase.id +" : "+ frase.nome + " - "+frase.congregacao + "</p>" );
   
      }, 'JSON');
  }
