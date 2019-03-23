@@ -130,17 +130,16 @@ function update($table = null, $id = 0, $data = null) {
 
 function relatorioTotalPorCongregacao(){
   $database = open_database();
-  $found = array();		
+  $found = null;		
 
   $sql = "select count(id) as total, congregacao from alunos group by congregacao;";
 
   try{
-    $result = $database->query($sql);		    		    
-    if ($result->num_rows > 0) {
-      while($row = $result->fetch_array() )	{	      
-        $found = $row;
-      }
-   }
+    $results = $database->query($sql);		    		    
+    while($row = $results->fetch_assoc()){
+      $found["congregacao"] = $row["congregacao"];
+    }
+   
   }catch(Exception $e){
     
     $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
