@@ -22,6 +22,6 @@ function relatorioTotalPorCongregacao(){
     return $found;
   }
 
-  echo relatorioTotalPorCongregacao();
+  echo json_encode(relatorioTotalPorCongregacao());
 
 ?>
