@@ -130,7 +130,7 @@ function update($table = null, $id = 0, $data = null) {
 
 function relatorioTotalPorCongregacao(){
   $database = open_database();
-  $found = null;		
+  $found[] = array();		
 
   $sql = "select count(id) as total, congregacao from alunos group by congregacao;";
 
