@@ -6,7 +6,7 @@ require_once(DBAPI);
 
     $database = open_database();
   
-    $sql = "select id,nome from alunos order by id desc limit 1";
+    $sql = "select id,nome,congregacao from alunos order by id desc limit 1";
   
     try{
      $result = $database->query($sql);
