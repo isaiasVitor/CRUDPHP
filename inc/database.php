@@ -35,7 +35,12 @@ function find( $table = null, $id = null ) {
                 $found = $result->fetch_assoc();		    
             }		    		  
         } else {		    		    
-            $sql = "SELECT * FROM " . $table;		    
+            $sql = "SELECT a.id, a.nome,a.telefone_fixo,a.telefone_celular,
+                           c.nome as congregacao, c.dirigente 
+                    FROM alunos as a 
+                    INNER JOIN congregacoes as c 
+                    ON a.congregacoes_id = c.id;";
+
             $result = $database->query($sql);		    		    
             if ($result->num_rows > 0) {		      
                 $found = $result->fetch_all(MYSQLI_ASSOC);	        	       

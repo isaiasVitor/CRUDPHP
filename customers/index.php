@@ -45,7 +45,7 @@
             <input type="text" class="form-control" value="<?php echo $customer['telefone_celular']; ?>" readonly>              
                 
             <span>Congregação</span>
-            <input type="text" class="form-control" value="<?php echo $customer['congregacoes_id']; ?>" readonly>
+            <input type="text" class="form-control" value="<?php echo $customer['congregacao']; ?> - Dirigente : <?php echo $customer['dirigente']; ?>" readonly>
     
 
           </div>
