@@ -135,11 +135,9 @@ function relatorioTotalPorCongregacao(){
   $sql = "select count(id) as total, congregacao from alunos group by congregacao;";
 
   try{
-   $result = $database->query($sql);
+    $result = $database->query($sql);		    		    
     if ($result->num_rows > 0) {		      
-      while ($dados = $result->fetch_array()) {
-        $found = $dados["total"]; 
-      }
+        $found = $result->fetch_assoc();	
    }
   }catch(Exception $e){
     
