@@ -20,8 +20,14 @@
                 role="tabpanel" aria-labelledby="headingTotalPorCongregacao">
                 <div class="panel-body">
                     <?php  if ($relatorios) : foreach ($relatorios as $relatorio) : ?>
-
-                    <?php echo $relatorio["total"]." : ".$relatorio["congregacao"]; ?> <br>
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-sm"><?php echo $relatorio["total"] ?></span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Small"
+                            aria-describedby="inputGroup-sizing-sm" value=" <?php echo $relatorio["congregacao"]; ?>" readonly>
+                    </div>
+                   
 
                     <?php endforeach;?>
                     <?php else : ?>
