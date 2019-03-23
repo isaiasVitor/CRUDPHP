@@ -45,7 +45,7 @@
             <input type="text" class="form-control" value="<?php echo $customer['telefone_celular']; ?>" readonly>              
                 
             <span>Congregação</span>
-            <input type="text" class="form-control" value="<?php echo $customer['congregacao']; ?>" readonly>
+            <input type="text" class="form-control" value="<?php echo $customer['congregacoes_id']; ?>" readonly>
     
 
           </div>
