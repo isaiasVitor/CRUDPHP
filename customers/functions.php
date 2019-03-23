@@ -45,9 +45,9 @@ function edit() {
     }
   }
 
-  function congregacoes_all(){
+  function congregacoes(){
     global $congregacoes;
-    $congregacoes = congregacoes();
+    $congregacoes = congregacoes_all();
   }
 
   function relatorios (){
