@@ -24,5 +24,5 @@ function relatorioTotalPorCongregacao(){
     close_database($database);
     
   }
-
+  relatorioTotalPorCongregacao();
 ?>
