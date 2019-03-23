@@ -10,9 +10,12 @@ function relatorioTotalPorCongregacao(){
   
     try{
       $result = $database->query($sql);		    		    
-      if ($result->num_rows > 0) {		      
-          $found = $result->fetch_assoc();	
-     }
+      if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            echo "total: " . $row["total"]. " - Congregação: " . $row["congregacao"]. "<br>";
+        }
+       }
     }catch(Exception $e){
       
       $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
