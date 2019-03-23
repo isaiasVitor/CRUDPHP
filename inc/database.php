@@ -137,11 +137,8 @@ function relatorioTotalPorCongregacao(){
   try{
     $result = $database->query($sql);		    		    
     if ($result->num_rows > 0) {
-      // output data of each row
-      while($row = $result->fetch_assoc()) {
-          $found["congregacao"]= $row["congregacao"];
-          $found["total"]= $row["total"];
-      }
+       $found= $result->fetch_all(MYSQLI_ASSOC);
+      
     }
   }catch(Exception $e){
     

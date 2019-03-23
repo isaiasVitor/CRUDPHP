@@ -21,7 +21,7 @@
                 <div class="panel-body">
                     <?php  if ($relatorios) : foreach ($relatorios as $relatorio) : ?>
 
-                    Congregação: <?php echo $relatorio["congregacao"]. " : ".$relatorio["total"]; ?> <br>
+                    <?php echo $relatorio["congregacao"]. " : ".$relatorio["total"]; ?> <br>
 
                     <?php endforeach;?>
                     <?php else : ?>
