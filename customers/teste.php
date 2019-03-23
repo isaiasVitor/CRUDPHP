@@ -22,7 +22,7 @@ function relatorioTotalPorCongregacao(){
       $_SESSION['type'] = 'danger';
     }
     close_database($database);
-    var_dump( json_encode($found));
+    
   }
 
 ?>
