@@ -25,7 +25,7 @@
                             <span class="input-group-text" id="inputGroup-sizing-sm"><?php echo $relatorio["total"] ?></span>
                         </div>
                         <input type="text" class="form-control" aria-label="Small"
-                            aria-describedby="inputGroup-sizing-sm" value=" <?php echo $relatorio["congregacao"]." - ".$relatorio["nome"] ?>" readonly>
+                            aria-describedby="inputGroup-sizing-sm" value=" <?php echo $relatorio["congregacao"]?>" readonly>
                     </div>
                    
 
