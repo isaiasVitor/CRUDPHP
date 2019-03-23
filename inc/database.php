@@ -132,7 +132,7 @@ function relatorioTotalPorCongregacao(){
   $database = open_database();
   $found = null;		
 
-  $sql = "select count(id) as total, congregacao from alunos group by congregacao;";
+  $sql = "select count(id) as total, congregacoes_id from alunos group by congregacoes_id;";
 
   try{
     $result = $database->query($sql);		    		    
@@ -147,4 +147,25 @@ function relatorioTotalPorCongregacao(){
   }
   close_database($database);
   return $found;
+}
+
+function congregacoes(){
+  $database = open_database();
+  $congregacoes = null;		
+
+  $sql = "select * from congregacoes;";
+
+  try{
+    $result = $database->query($sql);		    		    
+    if ($result->num_rows > 0) {
+       $congregacoes= $result->fetch_all(MYSQLI_ASSOC);
+      
+    }
+  }catch(Exception $e){
+    
+    $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
+    $_SESSION['type'] = 'danger';
+  }
+  close_database($database);
+  return $congregacoes;
 }

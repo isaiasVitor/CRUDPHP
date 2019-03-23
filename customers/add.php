@@ -1,8 +1,7 @@
-
 <?php 	  
     require_once('functions.php'); 	  
     add();
-    
+    congregacoes();
     ?>
 <?php include(HEADER_TEMPLATE); ?>
 <div class="card">
@@ -50,13 +49,13 @@
                     <div class="form-row">
                         <div class="col-md-8">
                             <label for="congregacao">Selecione a Congregação</label>
-                            <select class="custom-select my-1 mr-sm-2" name="aluno['congregacao']" id="congregacao"
+                            <select class="custom-select my-1 mr-sm-2" name="aluno['congregacoes_id']" id="congregacao"
                                 required>
                                 <option selected value="">Escolha...</option>
-                                <option value="Sede">Sede</option>
-                                <option value="Pq. São Paulo">Pq. São Paulo</option>
-                                <option value="Jd. Europa">Jd. Europa</option>
-                                <option value="Jd. Portugal">Jd. Portugal</option>
+                                <?php  foreach ($congregacoes as $congregacao): ?>
+                                <option value="<?php echo $congregacao['id']?>"><?php echo $congregacao['nome']?>
+                                </option>
+                                <?php endforeach; ?>
                             </select>
                             <div class="invalid-feedback">Selecione a Congregação</div>
                         </div>

@@ -2,7 +2,7 @@
 <?php		
 require_once('../config.php');	
 require_once(DBAPI);		
-$customers = null;	$customer = null; $relatorios = null;
+$customers = null;	$customer = null; $relatorios = null; $congregacoes;
 /**	 *  Listagem de Clientes	 */	
 function index() {		
     global $customers;		
@@ -43,6 +43,11 @@ function edit() {
     } else {
       header('location: index.php');
     }
+  }
+
+  function congregacoes(){
+    global $congregacoes;
+    $congregacoes = congregacoes();
   }
 
   function relatorios (){
