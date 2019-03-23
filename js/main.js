@@ -7,7 +7,7 @@ $.getScript("js/jquery.mask.js", function(){
     });
  });
 
-
+/*
  function atualizar()
  {
      // Fazendo requisição AJAX
@@ -27,7 +27,7 @@ $.getScript("js/jquery.mask.js", function(){
      // Faz a primeira atualização
      atualizar();
  });
-
+*/
 (function() {
     'use strict';
     window.addEventListener('load', function() {
