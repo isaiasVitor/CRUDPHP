@@ -138,7 +138,7 @@ function relatorioTotalPorCongregacao(){
    $result = $database->query($sql);
     if ($result->num_rows > 0) {		      
       while ($dados = $result->fetch_array()) {
-        $found = $dados; 
+        $found = $dados["total"]; 
       }
    }
   }catch(Exception $e){
