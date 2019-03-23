@@ -18,16 +18,19 @@ html, body {height:100%;}
 
 
 #num{
-    color:rgb(145, 214, 42);
+    color:rgb(182, 182, 182);
     font-size:25px;
 }
 
+#teste{
+    font-size:18px;
+}
 
 
 @media screen and (min-width: 767px) {
     #num{
         padding-top:5%;
-        color:greenyellow;
+        color:rgb(182, 182, 182);
         font-size:45px;
     }
   }
