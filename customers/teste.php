@@ -2,7 +2,7 @@
 require_once('../config.php');	
 require_once(DBAPI);	
 
-function relatorioTotalPorCongregacao(){
+
     $database = open_database();
     $found = null;		
   
@@ -23,6 +23,6 @@ function relatorioTotalPorCongregacao(){
     }
     close_database($database);
     
-  }
-  relatorioTotalPorCongregacao();
+ 
+
 ?>
