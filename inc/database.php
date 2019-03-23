@@ -136,8 +136,9 @@ function relatorioTotalPorCongregacao(){
 
   try{
     $results = $database->query($sql);		    		    
-    while($row = $results->fetch_assoc()){
-      $found["congregacao"] = $row["congregacao"];
+    while($dados=mysqli_fetch_assoc($sql))
+    {
+        $found = $dados['congregacao'];
     }
    
   }catch(Exception $e){
