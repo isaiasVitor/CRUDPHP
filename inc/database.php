@@ -139,7 +139,8 @@ function relatorioTotalPorCongregacao(){
     if ($result->num_rows > 0) {
       // output data of each row
       while($row = $result->fetch_assoc()) {
-          $found= $row["congregacao"];
+          $found["congregacao"]= $row["congregacao"];
+          $found["total"]= $row["total"];
       }
     }
   }catch(Exception $e){
