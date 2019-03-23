@@ -15,7 +15,7 @@ function add() {
     if (!empty($_POST['aluno'])) {	    		   
         $customer = $_POST['aluno'];	    
         save('alunos', $customer);	    
-        header('location: index.php');	  
+        header('location: add.php');	  
     }
 }
 
