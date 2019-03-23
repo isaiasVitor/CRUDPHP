@@ -6,7 +6,11 @@ require_once(DBAPI);
 
     $database = open_database();
   
-    $sql = "select id,nome,congregacoes_id from alunos order by id desc limit 1";
+    $sql = "SELECT a.id, a.nome, c.nome  as congregacao 
+    FROM alunos as a 
+    INNER JOIN congregacoes as c on a.congregacoes_id = c.id 
+    ORDER BY id DESC 
+    LIMIT 1;";
   
     try{
      $result = $database->query($sql);

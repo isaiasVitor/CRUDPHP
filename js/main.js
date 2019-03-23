@@ -7,14 +7,14 @@ $.getScript("js/jquery.mask.js", function(){
     });
  });
 
-/*
+
  function atualizar()
  {
      // Fazendo requisição AJAX
      $.post('atualizar.php', function (frase) {
   
          // Exibindo frase
-         $('#frase').html("Ultimo registro<br>" +"<p id='subfrase'>"+ frase.id +" - "+ frase.nome + " - "+frase.congregacoes_id + "</p>" );
+         $('#frase').html("Ultimo registro<br>" +"<p id='subfrase'>"+ frase.id +" - "+ frase.nome + " - "+frase.congregacao + "</p>" );
   
      }, 'JSON');
  }
@@ -27,7 +27,7 @@ $.getScript("js/jquery.mask.js", function(){
      // Faz a primeira atualização
      atualizar();
  });
-*/
+
 (function() {
     'use strict';
     window.addEventListener('load', function() {
