@@ -12,7 +12,7 @@
                 <a class="btn btn-outline-primary btn-block" role="button" data-toggle="collapse"
                     data-parent="#accordion" href="#collapseTotalPorCongregacao" aria-expanded="false"
                     aria-controls="collapseTotalPorCongregacao">
-                    Total por Congregação
+                    Total de alunos(as) por Congregação
                 </a>
             </div>
             <div id="collapseTotalPorCongregacao"
@@ -20,7 +20,7 @@
                 role="tabpanel" aria-labelledby="headingTotalPorCongregacao">
                 <div class="panel-body">
                     <?php  if ($relatorios) : foreach ($relatorios as $relatorio) : ?>
-                    <div class="input-group input-group-sm mb-3">
+                    <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-sm"><?php echo $relatorio["total"] ?></span>
                         </div>
@@ -33,15 +33,6 @@
                     <?php else : ?>
                     Nenhum registro encontrado
                     <?php endif; ?>
-                    <!--<span>Sede </span>
-                    <input type="text" class="form-control" value="" readonly>
-
-                    <span>Melhado</span>
-                    <input type="text" class="form-control" value="" readonly>
-
-                    <span>São Paulo</span>
-                    <input type="text" class="form-control" value="" readonly>
-                    -->
                 </div>
             </div>
         </div>
