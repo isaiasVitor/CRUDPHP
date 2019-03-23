@@ -132,7 +132,10 @@ function relatorioTotalPorCongregacao(){
   $database = open_database();
   $found = null;		
 
-  $sql = "select count(id) as total, congregacoes_id from alunos group by congregacoes_id;";
+  $sql = "SELECT count(a.id) as total, c.nome  as congregacao 
+          FROM alunos as a 
+          INNER JOIN congregacoes as c on a.congregacoes_id = c.id 
+          GROUP BY c.nome;";
 
   try{
     $result = $database->query($sql);		    		    
