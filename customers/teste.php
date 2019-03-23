@@ -1,4 +1,6 @@
 <?php
+require_once('../config.php');	
+require_once(DBAPI);	
 
 function relatorioTotalPorCongregacao(){
     $database = open_database();
