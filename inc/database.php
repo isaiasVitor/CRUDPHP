@@ -1,7 +1,7 @@
 
 
 <?php
-
+header( 'content-type: text/html; charset=utf-8' );
 mysqli_report(MYSQLI_REPORT_STRICT);		
 function open_database() {		
     try {			
