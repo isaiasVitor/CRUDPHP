@@ -1,7 +1,7 @@
 <?php
  ini_set('default_charset','ISO-8859-1');
  mb_internal_encoding("UTF-8"); 
- mb_http_output( "iso-8859-1" );  
+ mb_http_output( "ISO-8859-1" );  
  ob_start("mb_output_handler");   
 ?>
 <!DOCTYPE html>
