@@ -5,11 +5,10 @@ require_once('../config.php');
 require_once(DBAPI);		
 
 session_start();
-if(!isset($_SESSION['logado'])){
-  echo alert('Efetue o login para acessar');
+if(!isset($_SESSION['logado'])):
+  echo "<script>alert('Email enviado com Sucesso!);</script>";
   header('location:'.BASEURL.'login.php');
-}
-
+endif;
 
 $customers = null;	$customer = null; $relatorios = null; $congregacoes;
 /**	 *  Listagem de Clientes	 */	
