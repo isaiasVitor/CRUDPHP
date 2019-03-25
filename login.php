@@ -65,7 +65,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
- 
+
 
     <title>Autenticação</title>
 
@@ -90,16 +90,26 @@
 
 <body class="text-center">
     <form class="form-signin" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <img class="mb-4 rounded-circle" src="https://scontent.faqa3-1.fna.fbcdn.net/v/t1.0-9/18698034_1866444240284077_1650484403571742320_n.jpg?_nc_cat=104&_nc_ht=scontent.faqa3-1.fna&oh=5755c5a54b89848478f6cb77fc2c400a&oe=5D4C2898" alt="" width="75"
-            height="75">
+        <img class="mb-4 rounded-circle"
+            src="https://scontent.faqa3-1.fna.fbcdn.net/v/t1.0-9/18698034_1866444240284077_1650484403571742320_n.jpg?_nc_cat=104&_nc_ht=scontent.faqa3-1.fna&oh=5755c5a54b89848478f6cb77fc2c400a&oe=5D4C2898"
+            alt="" width="75" height="75">
         <h1 class="h3 mb-3 font-weight-normal"> Logar </h1>
         <label for="inputUsuario" class="sr-only">Usuario</label>
-        <input type="text" id="inputUsuario" class="form-control" name="login" placeholder="Usuario" required value="<?php echo isset($_COOKIE['login']) ? $_COOKIE['login'] : '' ?>" autofocus>
+        <input type="text" id="inputUsuario" class="form-control" name="login" placeholder="Usuario" required
+            value="<?php echo isset($_COOKIE['login']) ? $_COOKIE['login'] : '' ?>" autofocus>
         <label for="inputSenha" class="sr-only">Senha</label>
-        <input type="password" id="inputSenha" class="form-control" name="senha" placeholder="Senha" required value="<?php echo isset($_COOKIE['senha']) ? $_COOKIE['senha'] : '' ?>">
+        <input type="password" id="inputSenha" class="form-control" name="senha" placeholder="Senha" required
+            value="<?php echo isset($_COOKIE['senha']) ? $_COOKIE['senha'] : '' ?>">
         <div class="checkbox mb-3">
-        Lembrar senha: <input type="checkbox" name="lembrar-senha">
+            Lembrar senha: <input type="checkbox" name="lembrar-senha">
         </div>
+        <?php 
+            if(!empty($erros)):
+                foreach($erros as $erro):
+                    echo $erro;
+                endforeach;
+            endif;
+        ?>
         <button class="btn btn-lg btn-primary btn-block" name="btn-entrar" type="submit">Entrar</button>
         <p class="mt-5 mb-3 text-muted">Isaias &copy; 2019</p>
     </form>
