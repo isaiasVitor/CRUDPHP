@@ -86,7 +86,7 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin" method="POST">
+    <form class="form-signin" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <img class="mb-4 rounded-circle" src="https://scontent.faqa3-1.fna.fbcdn.net/v/t1.0-9/18698034_1866444240284077_1650484403571742320_n.jpg?_nc_cat=104&_nc_ht=scontent.faqa3-1.fna&oh=5755c5a54b89848478f6cb77fc2c400a&oe=5D4C2898" alt="" width="75"
             height="75">
         <h1 class="h3 mb-3 font-weight-normal"> Logar </h1>
