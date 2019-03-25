@@ -61,4 +61,3 @@ function edit() {
     global $relatorios;
     $relatorios = relatorioTotalPorCongregacao();
   }
-  

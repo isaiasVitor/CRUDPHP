@@ -47,10 +47,10 @@ header( 'content-type: text/html; charset=utf-8' );
                 </li>
 
             </ul>
-            <div class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0" action="<?php echo BASEURL; ?>/customers/logout.php">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" hidden>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">logout</button>
-            </div>
+                <button class="btn btn-outline-success my-2 my-sm-0"  type="submit">logout</button>
+            </form>
         </div>
     </nav>
     </nav>
