@@ -4,12 +4,12 @@
     require_once(DBAPI);
 
     session_start();
-
+   
     // Botão enviar
     if(isset($_POST['btn-entrar'])):
         $erros = array();
-        $login = mysqli_escape_string($conn, $_POST['login']);
-        $senha = mysqli_escape_string($conn, $_POST['senha']);
+        $login = $_POST['login'];
+        $senha = $_POST['senha'];
     
         if(isset($_POST['lembrar-senha'])):
     
@@ -22,9 +22,9 @@
         else:
             // 105 OR 1=1 
             // 1; DROP TABLE teste
-    
+            $database = open_database();
             $sql = "SELECT login FROM usuarios WHERE login = '$login'";
-            $resultado = mysqli_query($conn, $sql);		
+            $resultado = $database->query($sql);	
     
             if(mysqli_num_rows($resultado) > 0):
             $senha = md5($senha);       
@@ -32,14 +32,14 @@
     
     
     
-            $resultado = mysqli_query($conn, $sql);
+            $resultado = $database->query($sql);
     
                 if(mysqli_num_rows($resultado) == 1):
                     $dados = mysqli_fetch_array($resultado);
-                    mysqli_close($conn);
+                    close_database($database);
                     $_SESSION['logado'] = true;
                     $_SESSION['id_usuario'] = $dados['id'];
-                    header('Location: home.php');
+                    header('Location: customers/index.php');
                 else:
                     $erros[] = "<li> Usuário e senha não conferem </li>";
                 endif;
