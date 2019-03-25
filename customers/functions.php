@@ -3,6 +3,11 @@
 header( 'content-type: text/html; charset=utf-8' );
 require_once('../config.php');	
 require_once(DBAPI);		
+
+session_start();
+if(!isset($_SESSION['logado'])):
+  header('location:'.BASEURL.'index.php');
+endif;
 $customers = null;	$customer = null; $relatorios = null; $congregacoes;
 /**	 *  Listagem de Clientes	 */	
 function index() {		
