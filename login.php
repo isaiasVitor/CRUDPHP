@@ -54,25 +54,6 @@
 
     */
 
-  $database = open_database();
-  $congregacoes = null;		
-
-  $sql = "SELECT * FROM congregacoes;";
-
-  try{
-    $result = $database->query($sql);		    		    
-    if ($result->num_rows > 0) {
-       $congregacoes= $result->fetch_all(MYSQLI_ASSOC);
-      
-    }
-  }catch(Exception $e){
-    
-    $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
-    $_SESSION['type'] = 'danger';
-  }
-  close_database($database);
-  return $congregacoes;
-
 ?>
 
 
