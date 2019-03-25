@@ -6,7 +6,7 @@ require_once(DBAPI);
 
 session_start();
 if(!isset($_SESSION['logado'])){
-  alert('Efetue o login para acessar');
+  echo alert('Efetue o login para acessar');
   header('location:'.BASEURL.'login.php');
 }
 
