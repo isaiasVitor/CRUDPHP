@@ -2,8 +2,8 @@
     header( 'content-type: text/html; charset=utf-8' );
     require_once('../config.php');	
     require_once(DBAPI);
-
-    session_start();
+    
+   /* session_start();
    
     // Botão enviar
     if(isset($_POST['btn-entrar'])):
@@ -51,6 +51,28 @@
         endif;
     
     endif;
+
+    */
+
+  $database = open_database();
+  $congregacoes = null;		
+
+  $sql = "SELECT * FROM congregacoes;";
+
+  try{
+    $result = $database->query($sql);		    		    
+    if ($result->num_rows > 0) {
+       $congregacoes= $result->fetch_all(MYSQLI_ASSOC);
+      
+    }
+  }catch(Exception $e){
+    
+    $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
+    $_SESSION['type'] = 'danger';
+  }
+  close_database($database);
+  return $congregacoes;
+
 ?>
 
 
