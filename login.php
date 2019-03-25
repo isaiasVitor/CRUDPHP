@@ -1,3 +1,34 @@
+<?php	
+    header( 'content-type: text/html; charset=utf-8' );
+    require_once('../config.php');	
+    require_once(DBAPI);
+    session_start();
+
+    if(isset($_POST['btn-entrar'])):
+        $erros = array();
+        $login = mysqli_espace_string($conn,$_POST['login']);
+        $senha = mysqli_espace_string($conn,$_POST['senha']);
+
+        $sql = "SELECT login FROM usuarios WHERE login = '$login';";
+        $result = msqli_query($conn,$sql);
+        if(mysqli_num_rows($result) > 0):
+            $senha = md5($senha);
+            $sql = "SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha';";
+            $result = mysqli_query($conn,$sql);
+
+            if(mysqli_num_rows($result) == 1):
+                $dados = mysqli_fetch_array($resultado);
+            else:
+                $erros[] = "Senha incorreta";
+            endif;
+        else:
+            $erros[] = "Usuario inexistente";
+        endif;
+    endif;
+?>
+
+
+
 <html lang="en">
 
 <head>
@@ -29,7 +60,7 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" method="POST">
         <img class="mb-4 rounded-circle" src="https://scontent.faqa3-1.fna.fbcdn.net/v/t1.0-9/18698034_1866444240284077_1650484403571742320_n.jpg?_nc_cat=104&_nc_ht=scontent.faqa3-1.fna&oh=5755c5a54b89848478f6cb77fc2c400a&oe=5D4C2898" alt="" width="75"
             height="75">
         <h1 class="h3 mb-3 font-weight-normal"> Logar </h1>
