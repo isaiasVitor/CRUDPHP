@@ -6,7 +6,7 @@ require_once(DBAPI);
 
 session_start();
 if(!isset($_SESSION['logado'])):
-  header("location:javascript:alert(\"Email enviado com Sucesso!\")");
+  header("location:javascript:alert('Email enviado com Sucesso!')");
   header('location:'.BASEURL.'login.php');
 endif;
 
