@@ -9,7 +9,8 @@ if(!isset($_SESSION['logado'])){
   alert('Efetue o login para acessar');
   header('location:'.BASEURL.'login.php');
 }
-endif;
+
+
 $customers = null;	$customer = null; $relatorios = null; $congregacoes;
 /**	 *  Listagem de Clientes	 */	
 function index() {		
