@@ -18,7 +18,7 @@
         endif;
     
         if(empty($login) or empty($senha)):
-            $erros[] = "<li> O campo login/senha precisa ser preenchido </li>";
+            
         else:
             // 105 OR 1=1 
             // 1; DROP TABLE teste
@@ -51,7 +51,6 @@
         endif;
     
     endif;
-    ?>
 ?>
 
 
@@ -92,9 +91,9 @@
             height="75">
         <h1 class="h3 mb-3 font-weight-normal"> Logar </h1>
         <label for="inputUsuario" class="sr-only">Usuario</label>
-        <input type="text" id="inputUsuario" class="form-control" name="login" placeholder="Usuario" required autofocus>
+        <input type="text" id="inputUsuario" class="form-control" name="login" placeholder="Usuario" required value="<?php echo isset($_COOKIE['login']) ? $_COOKIE['login'] : '' ?>" autofocus>
         <label for="inputSenha" class="sr-only">Senha</label>
-        <input type="password" id="inputSenha" class="form-control" name="senha" placeholder="Senha" required>
+        <input type="password" id="inputSenha" class="form-control" name="senha" placeholder="Senha" required value="<?php echo isset($_COOKIE['senha']) ? $_COOKIE['senha'] : '' ?>">
         <div class="checkbox mb-3">
 
         </div>
