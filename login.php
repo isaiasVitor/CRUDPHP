@@ -2,7 +2,6 @@
     header( 'content-type: text/html; charset=utf-8' );
     require_once('../config.php');	
     require_once(DBAPI);
-    session_start();
 
     if(isset($_POST['btn-entrar'])):
         $erros = array();
@@ -65,13 +64,13 @@
             height="75">
         <h1 class="h3 mb-3 font-weight-normal"> Logar </h1>
         <label for="inputUsuario" class="sr-only">Usuario</label>
-        <input type="text" id="inputUsuario" class="form-control" placeholder="Usuario" required autofocus>
+        <input type="text" id="inputUsuario" class="form-control" name="login" placeholder="Usuario" required autofocus>
         <label for="inputSenha" class="sr-only">Senha</label>
-        <input type="password" id="inputSenha" class="form-control" placeholder="Senha" required>
+        <input type="password" id="inputSenha" class="form-control" name="senha" placeholder="Senha" required>
         <div class="checkbox mb-3">
 
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+        <button class="btn btn-lg btn-primary btn-block" name="btn-entrar" type="submit">Entrar</button>
         <p class="mt-5 mb-3 text-muted">Isaias &copy; 2019</p>
     </form>
 </body>
