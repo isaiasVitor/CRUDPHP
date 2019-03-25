@@ -48,8 +48,8 @@ header( 'content-type: text/html; charset=utf-8' );
 
             </ul>
             <form class="form-inline my-2 my-lg-0" action="<?php echo BASEURL; ?>/customers/logout.php">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" hidden>
-                <button class="btn btn-outline-success my-2 my-sm-0"  type="submit">logout</button>
+                <span class="form-control mr-sm-2">Ola, ...</span>
+                <button class="btn btn-outline-success my-2 my-sm-0"  type="submit">Sair</button>
             </form>
         </div>
     </nav>
