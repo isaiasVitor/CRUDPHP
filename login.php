@@ -38,14 +38,14 @@
                     $dados = mysqli_fetch_array($resultado);
                     close_database($database);
                     $_SESSION['logado'] = true;
-                    $_SESSION['id_usuario'] = $dados['id'];
+                    $_SESSION['nome'] = $dados['nome'];
                     header('Location: customers/index.php');
                 else:
-                    $erros[] = "<li> Usuário e senha não conferem </li>";
+                    $erros[] = "Senha invalida";
                 endif;
     
             else:
-                $erros[] = "<li> Usuário inexistente </li>";
+                $erros[] = " Usuário inexistente";
             endif;
     
         endif;
