@@ -14,7 +14,7 @@
         if(isset($_POST['lembrar-senha'])):
     
             setcookie('login', $login, time()+3600);
-            setcookie('senha', md5($senha), time()+3600);
+            setcookie('senha', $senha, time()+3600);
         endif;
     
         if(empty($login) or empty($senha)):
