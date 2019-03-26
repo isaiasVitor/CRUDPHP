@@ -20,14 +20,16 @@ session_start();
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="<?php echo BASEURL; ?>">
-    <img class="rounded-circle" src="https://scontent.faqa3-1.fna.fbcdn.net/v/t1.0-9/18698034_1866444240284077_1650484403571742320_n.jpg?_nc_cat=104&_nc_ht=scontent.faqa3-1.fna&oh=5755c5a54b89848478f6cb77fc2c400a&oe=5D4C2898" width="30" height="30" alt="">
-     </a>
+        <a class="navbar-brand" href="<?php echo BASEURL; ?>">
+            <img class="rounded-circle"
+                src="https://scontent.faqa3-1.fna.fbcdn.net/v/t1.0-9/18698034_1866444240284077_1650484403571742320_n.jpg?_nc_cat=104&_nc_ht=scontent.faqa3-1.fna&oh=5755c5a54b89848478f6cb77fc2c400a&oe=5D4C2898"
+                width="30" height="30" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -45,14 +47,13 @@ session_start();
                         <a class="dropdown-item" href="#">Registrar Presenças</a>
                         <a class="dropdown-item" href="<?php echo BASEURL; ?>customers/relatorio.php">Relatorio
                             Geral</a>
-
                     </div>
                 </li>
-
             </ul>
             <?php if(isset($_SESSION['logado'])): ?>
             <form class="form-inline my-2 my-lg-0" action="<?php echo BASEURL; ?>customers/logout.php">
-                <span class="mr-sm-2 navbar-brand navbar-text" style="color:white">Ola, <?php echo $_SESSION['nome']?></span>
+                <span class="mr-sm-2 navbar-brand navbar-text" style="color:white">Ola,
+                    <?php echo $_SESSION['nome']?></span>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sair</button>
             </form>
             <?php else: ?>
@@ -62,6 +63,5 @@ session_start();
             </form>
             <?php endif; ?>
         </div>
-    </nav>
     </nav>
     <main>

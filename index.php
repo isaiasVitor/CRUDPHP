@@ -4,6 +4,7 @@
  mb_http_output( "iso-8859-1" );  
  ob_start("mb_output_handler");   
  header("Content-Type: text/html; charset=ISO-8859-1",true);
+ session_start();
 ?>
 <?php require_once 'config.php'; ?>
 <?php require_once DBAPI; ?>
@@ -14,7 +15,11 @@
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4">Bem vindo</h1>
+        <h1 class="display-4">Bem vindo 
+        <?php if(isset($_SESSION["nome"])): 
+                   echo $_SESSION["nome"];
+                endif;?>
+        </h1>
         <p class="lead">Este webservice foi criado apenas para teste, utilize com atenção!!</p>
     </div>
 </div>
