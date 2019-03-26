@@ -50,13 +50,14 @@ header( 'content-type: text/html; charset=utf-8' );
             <?php if(isset($_SESSION['logado'])): ?>
             <form class="form-inline my-2 my-lg-0" action="<?php echo BASEURL; ?>/customers/logout.php">
                 <span class="mr-sm-2" style="color:white">Ola, <?php echo $_SESSION['nome'] ?> </span>
-                <button class="btn btn-outline-success my-2 my-sm-0"  type="submit">Sair</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sair</button>
             </form>
             <?php else: ?>
             <form class="form-inline my-2 my-lg-0" action="<?php echo BASEURL; ?>/login.php">
                 <span class="mr-sm-2" style="color:white"></span>
-                <button class="btn btn-outline-success my-2 my-sm-0"  type="submit">Entrar</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Entrar</button>
             </form>
+            <?php endif; ?>
         </div>
     </nav>
     </nav>
