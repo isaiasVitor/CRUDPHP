@@ -49,12 +49,12 @@ header( 'content-type: text/html; charset=utf-8' );
             </ul>
             <?php if(isset($_SESSION['logado'])): ?>
             <form class="form-inline my-2 my-lg-0" action="<?php echo BASEURL; ?>/customers/logout.php">
-                <label class="mr-sm-2" style="color:white">Ola, <?php echo $_SESSION['nome']?></label>
+                <span class="mr-sm-2 navbar-brand h1" style="color:white">Ola, <?php echo $_SESSION['nome']?></span>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sair</button>
             </form>
             <?php else: ?>
             <form class="form-inline my-2 my-lg-0" action="<?php echo BASEURL; ?>/login.php">
-                <label class="mr-sm-2" style="color:white"></label>
+                <span class="mr-sm-2 navbar-brand h1" style="color:white"></span>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Entrar</button>
             </form>
             <?php endif; ?>
