@@ -90,9 +90,6 @@ function save($table = null, $data = null) {
     try {
       $database->query($sql);
   
-      $_SESSION['message'] = 'Registro cadastrado com sucesso.';
-      $_SESSION['type'] = 'success';
-    
     } catch (Exception $e) { 
     
       $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
